@@ -1,0 +1,66 @@
+
+
+@mixin flex($fd, $fw, $ai, $jc) {
+      display: flex;
+      @if $fd != null {
+            flex-direction: row;
+      }
+      @if $fw != null {
+            flex-wrap: nowrap;
+      }
+      @if $ai != null {
+            align-items: center;
+      }
+      @if $jc != null {
+            justify-content: center;
+      }
+}
+
+@mixin text($fs, $c, $ff, $fw, $td, $tt, $ta) {
+      @if $fs != null {
+            font-size: 0;
+      }
+      @if $c != null {
+            color: #fff;
+      }
+      @if $ff != null {
+            font-family: 'Roboto';
+      }
+      @if $fw != null {
+            font-weight: 100;
+      }
+      @if $td != null {
+            text-decoration: none;
+      }
+      @if $tt != null {
+            text-transform: capitalize;
+      }
+      @if $ta != null {
+            text-align: center;
+      }
+}
+
+@mixin absolute($ct, $w, $h, $l, $r, $t, $b) {
+      position: absolute;
+      @if $ct != null {
+            content: "";
+      }
+      @if $w !=null {
+            width: 0;
+      }
+      @if $h != null {
+            height: 0;
+      }
+      @if $l != null {
+            left: 0;
+      }
+      @if $r != null {
+            right: 0;
+      }
+      @if $t != null {
+            top: 0;
+      }
+      @if $b != null {
+            bottom: 0;
+      }
+}

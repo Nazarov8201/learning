@@ -1,0 +1,30 @@
+
+@import "mixin";
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.container{
+      max-width: 95%;
+      margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+      .container{
+            max-width: 80%;
+      }
+}
+
+
+@media only screen and (min-width: 1024px) {
+      .container{
+            max-width: 1140px;
+      }
+}
+      
+@import "header";
+
+@import "faq";
