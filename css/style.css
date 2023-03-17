@@ -12,6 +12,7 @@
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 80%;
+    overflow: hidden;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -39,7 +40,7 @@
   right: 10px;
   font-size: 25px;
   color: #555252;
-  z-index: 4;
+  z-index: 30;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -380,11 +381,23 @@
   font-weight: 700;
 }
 
+@media only screen and (min-width: 1024px) {
+  .about-block {
+    margin: 100px 0;
+  }
+  .about-block h3 {
+    font-size: 60px;
+  }
+}
 .about-block-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  line-height: 80px;
+}
+.about-block-info i {
+  font-size: 70px;
 }
 .about-block-info h3 {
   font-size: 18px;
@@ -402,8 +415,213 @@
   text-align: center;
 }
 
+.about-block-info-icon {
+  color: #555252;
+  margin: 0 auto;
+  font-size: 70px;
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.pe-7s-medal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.pe-7s-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pe-7s-micro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pe-7s-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.latest {
+  min-height: 400px;
+  overflow: hidden;
+  background: url("../images/courses_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 60px 0;
+}
+
 @media only screen and (min-width: 1024px) {
-  .about .swiper-pagination {
-    display: none;
+  .latest {
+    padding: 150px 0;
   }
+}
+.latest-nav {
+  margin-bottom: 30px;
+}
+.latest-nav h3 {
+  font-size: 30px;
+  color: #555252;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  font-weight: 700;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .latest-nav h3 {
+    font-size: 60px;
+  }
+}
+.latest-info {
+  flex-basis: 100%;
+}
+
+.latest-info-nav {
+  position: relative;
+}
+.latest-info-nav img {
+  max-width: 100%;
+}
+
+.latest-info-nav:hover .latest-info-nav-el {
+  display: block;
+}
+
+.latest-info-nav-el {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(24, 21, 25, 0.8);
+}
+.latest-info-nav-el a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+}
+
+.latest-info-block-nav h3 {
+  font-size: 22px;
+  color: #555252;
+  font-family: "Open Sans";
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.latest-info-block {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.latest-info-block-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.latest-info-block-text span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.latest-info-block-text span i {
+  font-size: 14px;
+  color: #555252;
+}
+.latest-info-block-text span p {
+  font-size: 14px;
+  color: #555252;
+  font-family: "Open Sans";
+  text-transform: capitalize;
+}
+
+.latest-info-block-link {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.latest-info-block-link a {
+  text-decoration: none;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  padding: 5px;
+  border-radius: 5px;
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.gallery {
+  min-height: 400px;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery {
+    padding: 150px 0;
+  }
+}
+.gallery-nav {
+  margin-bottom: 30px;
+}
+.gallery-nav h3 {
+  font-size: 30px;
+  color: #555252;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  font-weight: 700;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery-nav h3 {
+    font-size: 60px;
+  }
+}
+.gallery-info {
+  position: relative;
+  flex-basis: 100%;
+  text-align: center;
+}
+.gallery-info img {
+  max-width: 100%;
+}
+
+.gallery-info-el {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(24, 21, 25, 0.8);
+}
+
+.gallery-info-el-block {
+  line-height: 30px;
+  padding: 10px 8px 0 8px;
+  border: 1px solid #fff;
+  font-size: 40px;
+  color: #fff;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

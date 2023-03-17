@@ -1,0 +1,132 @@
+
+.latest{
+      min-height: 400px;
+      overflow: hidden;
+      background: url('../images/courses_bg.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 60px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+      .latest{
+            padding: 150px 0;
+      }
+}
+
+.latest-nav{
+      margin-bottom: 30px;
+      h3{
+            font-size: 30px;
+            color: #555252;
+            font-family: 'Roboto Slab';
+            text-transform: uppercase;
+            font-weight:700;
+            flex-basis: 100%;
+            text-align: center;
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .latest-nav{
+            h3{
+                  font-size: 60px;
+            }
+      }
+}
+
+.latest-info{
+      flex-basis: 100%;
+}
+
+.latest-info-nav{
+      position: relative;
+      img{
+            max-width: 100%;
+      }
+}
+.latest-info-nav:hover{
+      .latest-info-nav-el{
+            display: block;
+      }
+}
+
+
+.latest-info-nav-el{
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      background-color: rgba(24, 21, 25, 0.8);
+      a{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%);
+            text-decoration: none;
+            color: #fff;
+            font-size: 40px;
+      }
+}
+
+
+
+
+
+.latest-info-block-nav{
+      h3{
+            font-size: 22px;
+            color: #555252;
+            font-family: 'Open Sans';
+            text-transform: capitalize;
+            font-weight: 600;
+      }
+}
+
+.latest-info-block{
+      background-color: #fff;
+      padding: 15px;
+}
+
+.latest-info-block-text{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      span{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            i{
+                  font-size: 14px;
+                  color: #555252;
+            }
+            p{
+                  font-size: 14px;
+                  color: #555252;
+                  font-family: 'Open Sans';
+                  text-transform: capitalize;
+            }
+      }
+}
+
+.latest-info-block-link{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      a{
+            text-decoration: none;
+            background-color: #ff6600;
+            color: #fff;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-family: 'Roboto';
+            padding: 5px;
+            border-radius: 5px;
+            flex-basis: 45%;
+            text-align: center;
+      }
+}
