@@ -36,7 +36,7 @@
 }
 
 .latest-info{
-      flex-basis: 100%;
+      margin: 0 auto;
 }
 
 .latest-info-nav{
@@ -128,5 +128,10 @@
             border-radius: 5px;
             flex-basis: 45%;
             text-align: center;
+            &:hover{
+                  background-color: #fff;
+                  color: #ff6600;
+                  border: 1px solid#ff6600;
+            }
       }
 }
