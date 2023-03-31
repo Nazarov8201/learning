@@ -1,0 +1,19 @@
+
+
+.all{
+      background-color: #000;
+      padding: 40px 0;
+}
+
+.all-inner{
+      text-align: center;
+      span{
+            font-size: 18px;
+            color: #fff;
+            font-family: "Open Sans";
+            text-transform: capitalize;
+      }
+      span:nth-child(2){
+            color: #e34b11;
+      }
+}
